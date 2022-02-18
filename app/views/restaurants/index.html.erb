@@ -1,0 +1,26 @@
+<div class="form-group" style="width: 700px; height: 700px; margin: 0 auto; margin-top: 50px;">
+    <h2><font face="Algerian">Restaurantes</font></h2>
+    <br>
+    <table class="table table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Nombre</th>
+                <th>Propietario</th>
+                <th>Direcci&oacute;n</th>
+                <th>Especialidad</th>
+                <th>Tel&eacute;fono</th>
+            </tr>
+        </thead>
+        <tbody>
+            <%@all_restaurants.each do |x|%>
+            <tr>
+                <td><%=x.name%></td>
+                <td><%=x.owner%></td>
+                <td><%=x.address%></td>
+                <td><%=x.specialty%></td>
+                <td><%=x.phone%></td>
+            </tr>
+            <%end%>
+        </tbody>
+    </table>
+</div>
